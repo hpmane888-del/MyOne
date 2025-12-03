@@ -12,3 +12,18 @@ git fetch origin：抓取遠端最新狀態，但不改本地檔案
 git reset --hard origin/develop：把本地 develop 分支 完全重置成遠端狀態
 git branch 看分支目前在哪(和有哪些)
 git status 看檔案狀態，跟遠端有什麼不同
+
+PS C:\GitHub Test> git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+PS C:\GitHub Test> git branch
+  develop
+* master
+PS C:\GitHub Test> git merge develop
+之後下方決定要怎麼更新 蓋在? OR 變成develop >master
+
+# 切到 develop 分支
+git checkout develop
+
+# 把 develop 基底換到 master 最新 commit
+git rebase master
