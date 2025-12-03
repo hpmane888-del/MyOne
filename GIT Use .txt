@@ -6,3 +6,9 @@ git reset --hard HEAD~1  注意：會刪掉這次 commit 的修改
 
 git reset --soft HEAD~1  修改會保留在暫存區或工作區  < 只會取消 commit
 git reset --soft HEAD~1  不小心commit < 可以退回
+
+強制覆蓋本機狀態 
+git fetch origin：抓取遠端最新狀態，但不改本地檔案
+git reset --hard origin/develop：把本地 develop 分支 完全重置成遠端狀態
+git branch 看分支目前在哪(和有哪些)
+git status 看檔案狀態，跟遠端有什麼不同
