@@ -27,3 +27,21 @@ git checkout develop
 
 # 把 develop 基底換到 master 最新 commit
 git rebase master
+
+# 樹狀圖語法
+PS C:\GitHub Test> git log --oneline --graph --decorate --all 
+* 751088c (HEAD -> master, origin/master, origin/HEAD) update1.0.1
+* f687056 (origin/develop, develop) 更新GIT使用方法
+* 884ebb3 update1.0.0
+* a5f2927 develop Push Test
+* 275a6f5 first
+
+# 回到 first 的方式
+git checkout 275a6f5
+
+
+
+
+
+
+
